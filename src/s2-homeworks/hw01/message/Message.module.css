@@ -1,31 +1,53 @@
 .message {
+    display: flex;
+    align-items: flex-end; /* Выравнивание аватарки и SVG по нижнему краю */
+    margin-bottom: 20px; /* Отступ между сообщениями */
+    position: relative;
+    left: 550px;
 
 }
 
-.imageAndText {
-
+.avatar {
+    width: 48px;
+    height: 48px;
+    order: 2; /* Аватарка справа */
+    position: absolute;
+    bottom: 40px;
+    right:659px;
 }
 
-.imageAndText img {
-
+.messageSvg {
+    order: 1; /* SVG слева */
+    width: 400px; /* Ширина SVG */
+    height: 100px; /* Высота SVG */
 }
 
-.text {
-
-}
-
-.text:after {
+.textContent {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
 
 }
 
 .name {
-
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.94px;
+    margin-bottom: 5px; /* Отступ между именем и текстом */
+position: relative;
+    left: 290px;
 }
 
 .messageText {
-
+    white-space: pre-wrap;
+    font-size: 16px;
 }
 
 .time {
-
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px; /* Отступ между текстом и временем */
+    position: absolute;
+bottom: 15px;
+    right:668px;
 }
